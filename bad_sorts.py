@@ -3,7 +3,7 @@ This file corresponds to the first graded lab of 2XC3.
 Feel free to modify and/or add functions to this file.
 """
 import random
-
+import matplotlib.pyplot as plot
 
 # Create a random list length "length" containing whole numbers between 0 and max_value inclusive
 def create_random_list(length, max_value):
@@ -34,6 +34,7 @@ def insertion_sort(L):
         insert(L, i)
 
 
+
 def insert(L, i):
     while i > 0:
         if L[i] < L[i-1]:
@@ -41,7 +42,6 @@ def insert(L, i):
             i -= 1
         else:
             return
-
 
 # ******************* Bubble sort code *******************
 
@@ -68,3 +68,4 @@ def find_min_index(L, n):
         if L[i] < L[min_index]:
             min_index = i
     return min_index
+
