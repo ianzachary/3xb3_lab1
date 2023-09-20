@@ -18,8 +18,8 @@ def insert2(L, i):
             L[i] = value
             return L
         
-list_sizes1, times1 = test_time(1000, 10, 50, insertion_sort)
-list_sizes2, times2 = test_time(1000, 10, 50, insertion_sort2)
+list_sizes1, times1 = test_time(insertion_sort)
+list_sizes2, times2 = test_time(insertion_sort2)
 
 plot.plot(list_sizes1, times1)
 plot.plot(list_sizes2, times2)
