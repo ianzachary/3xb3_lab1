@@ -28,7 +28,7 @@ def main():
     plot.plot(swaps_i, times_i)
     plot.plot(swaps_b, times_b)
     plot.legend(["Selection Sort","Insertion Sort","Bubble Sort"])
-    plot.xlabel("List Sizes")
+    plot.xlabel("Swaps")
     plot.ylabel("Time (s)")
     plot.show()
 
