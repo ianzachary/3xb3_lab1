@@ -27,8 +27,6 @@ def findMaxMin_index(L, n, k):
             max_index = i
     return min_index, max_index
 
-print(selection_sort2([2,10,3,0,7,5,9]))
-
 list_sizes1, times1 = test_time(selection_sort)
 list_sizes2, times2 = test_time(selection_sort2)
 
