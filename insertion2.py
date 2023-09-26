@@ -10,13 +10,11 @@ def insertion_sort2(L):
 
 def insert2(L, i):
     value = L[i]
-    while i > 0:
-        if L[i - 1] > value:
-            L[i] = L[i - 1]
-            i -= 1
-        else:
-            L[i] = value
-            return L
+    while i > 0 and L[i - 1] >= value:
+        L[i] = L[i - 1]
+        i -= 1
+    L[i] = value
+    return L
         
 list_sizes1, times1 = test_time(insertion_sort)
 list_sizes2, times2 = test_time(insertion_sort2)
