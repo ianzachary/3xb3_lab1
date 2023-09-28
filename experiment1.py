@@ -6,7 +6,7 @@ from bad_sorts import selection_sort
 from bad_sorts import bubble_sort
 
 
-def test_time(function, n = 1000, m = 100, step = 500):
+def test_time(function, n = 1000, m = 100, step = 50):
     times = []
     list_sizes = []
     for i in range(0, n, step):

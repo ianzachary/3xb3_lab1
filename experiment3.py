@@ -6,7 +6,7 @@ from bad_sorts import bubble_sort
 from bad_sorts import insertion_sort
 
 
-def test_near_sorted_list(function, n = 1000, m = 100, swaps = 500):
+def test_near_sorted_list(function, n = 1000, m = 100, swaps = 50):
     times, s = [], []
     for i in range(0, n, swaps):
         time = 0
