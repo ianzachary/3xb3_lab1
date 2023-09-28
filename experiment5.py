@@ -5,9 +5,9 @@ from experiment3 import test_near_sorted_list
 import matplotlib.pyplot as plot
 
 def main():
-    list_sizes_s, times_s = test_near_sorted_list(quicksort, n = 950)
-    list_sizes_m, times_m = test_near_sorted_list(mergesort, n = 950)
-    list_sizes_h, times_h = test_near_sorted_list(heapsort, n = 950)
+    list_sizes_s, times_s = test_near_sorted_list(quicksort, n = 995)
+    list_sizes_m, times_m = test_near_sorted_list(mergesort, n = 995)
+    list_sizes_h, times_h = test_near_sorted_list(heapsort, n = 995)
 
     plot.plot(list_sizes_s, times_s)
     plot.plot(list_sizes_m, times_m)

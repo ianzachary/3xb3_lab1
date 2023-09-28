@@ -48,7 +48,7 @@ list_sizes2, times2 = test_time(bottom_up_mergesort)
 
 plot.plot(list_sizes1, times1)
 plot.plot(list_sizes2, times2)
-plot.legend(["Mergesort 1", "Mergesort 2"])
+plot.legend(["Recursive Mergesort", "Iterative Mergesort"])
 plot.xlabel("List Sizes")
 plot.ylabel("Time (s)")
 plot.show()
